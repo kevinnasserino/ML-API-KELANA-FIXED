@@ -61,8 +61,7 @@ def recommend_places():
 
     # Mengembalikan hasil sebagai respons
     return jsonify({
-        "selected_places": selected_places,
-        "routes": optimized_routes
+        "selected_places": selected_places
     })
 
 optimize_route_blueprint = Blueprint('optimize_route', __name__)
